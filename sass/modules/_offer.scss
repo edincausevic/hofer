@@ -1,0 +1,51 @@
+#offer {
+    position: relative;
+    background: $light-gray;
+    
+    .offer-container {
+        margin-top: 70px;
+        
+        .offer-img {
+            width: 65%;
+            float: left;
+
+            img { 
+                width: 87%; 
+                cursor: default;
+            
+            }
+            h3{
+                margin: 20px 0 10px 0;
+            }
+            p {
+                padding-right: 50px;
+            }
+            
+        }
+        .offer-list {
+            width: 34%;
+            float: left;
+            padding-right: 20px;
+            i { 
+                color: $green; 
+                margin-right: 7px;
+            }
+            h3 { 
+                margin-bottom: 8px; 
+                font-weight: 100;
+                font-size: 140%;
+                cursor: pointer;
+                transition: color 0.1s ease-in-out;
+                &:hover {
+                    color: $green;
+                }
+                &:before {
+                    content: url(../img/hearth-small.png);
+                    position: absolute;
+                    left: -30px;
+                }
+            }
+        }
+    }
+    @include clearfix;
+}
